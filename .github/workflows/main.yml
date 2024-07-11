@@ -14,7 +14,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           # username: ${{ vars.DOCKER_USERNAME }}
-          username: renzotap@gmail.com
+          # username: renzotap@gmail.com
+          username: renzotap
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Set up Docker Buildx
@@ -27,4 +28,4 @@ jobs:
           push: true
           # tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:1
           # tags: renzotap@gmail.com/${{ github.event.repository.name }}:1
-          tags: renzotap@gmail.com/${{ github.event.repository.name }}:1
+          tags: renzotap/${{ github.event.repository.name }}:1
