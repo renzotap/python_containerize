@@ -27,4 +27,4 @@ jobs:
           push: true
           # tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:1
           # tags: renzotap@gmail.com/${{ github.event.repository.name }}:1
-          tags: renzotap/${{ github.event.repository.name }}:1
+          tags: renzotap@gmail.com/${{ github.event.repository.name }}:1
